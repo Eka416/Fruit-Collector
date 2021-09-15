@@ -14,6 +14,8 @@ var player_img;
 var player1score =0;
 var player2score =0;
 
+var obstacleGroup,obstacle,obstacleImage;
+
 function preload(){
   back_img = loadImage("jungle.jpg");
   player_img = loadImage("basket2.png");
@@ -23,6 +25,8 @@ function preload(){
   fruit4_img = loadImage("orange2.png");
   fruit5_img = loadImage("pineapple2.png");
   fruitGroup = new Group();
+
+  obstacleImage = loadImage("mushroom.png")
 }
 function setup() {
   createCanvas(1000, 600);
